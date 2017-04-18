@@ -20,6 +20,10 @@ module.exports = {
                 loader: 'vue-loader'
             },
             {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader' ]
+            },
+            {
                 test: /\.json$/,
                 loader: "json-loader" //这里在webpack 2中，必须加上-loader后缀
             }
