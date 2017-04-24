@@ -4,5 +4,6 @@ import Vuex from 'vuex'
 import VueRouter from 'vue-router'
 Vue.use(Vuex);
 Vue.use(VueRouter);
-var greeter = require('./Greeter.js');
-document.getElementById('root').appendChild(greeter());
+debugger;
+var greeter = require('./_Greeter.js');
+document.body.appendChild(greeter());

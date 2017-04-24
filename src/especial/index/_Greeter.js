@@ -1,5 +1,5 @@
 /*用于测试json加载器*/
-const  config = require('./tsconfig.json');
+const  config = require('./_tsconfig.json');
 
 module.exports = function() {
     let greet = document.createElement('div');
