@@ -1,6 +1,8 @@
 //main.js
 import Vue from 'vue'
 import Vuex from 'vuex'
-Vue.use(Vuex)
+import VueRouter from 'vue-router'
+Vue.use(Vuex);
+Vue.use(VueRouter);
 var greeter = require('./Greeter.js');
 document.getElementById('root').appendChild(greeter());
