@@ -3,7 +3,7 @@ module.exports = {
     //eval-source-map 适合开发时使用，可以在调试时，eval执行原文件的连接。
     devtool: 'eval-source-map',
     //注：“__dirname”是node.js中的一个全局变量，它指向当前执行脚本所在的目录。
-    entry:  __dirname + "/app/main.js",//唯一入口文件
+    entry:  __dirname + "/src/main.js",//唯一入口文件
     output: {
         path: __dirname + "/public",//打包后的文件存放的地方
         filename: "[name].[chunkhash].js" //打包后输出文件的文件名
