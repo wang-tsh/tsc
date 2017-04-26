@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TSC</title>
+</head>
+
+<body>
+<!-- welcomeFrame tsc -->
+<div id="tsc_topframe">
+    <div id="logoHead">
+        <div id="centerLogo"></div>
+        <p>欢迎访问 CC & TS 的技术开发平台</p>
+        <p class="en_Logo">Welcome visit programing which product by tsc</p>
+        <p class="en_Logo">You can get all programing detail </p>
+    </div>
+    <div id="enterPan">
+        <div id="enterButton">
+            <div class="eb_fontSml">click here</div>
+            <div class="eb_font">ENTER</div>
+        </div>
+    </div>
+    <div id="tsc_footerLogo">
+        <img id="piclogo1" src="<%=require('./image/logo1.png')%>">
+        <img id="piclogo2" src="<%=require('./image/logo2.png')%>">
+        <img id="piclogo3" src="<%=require('./image/logo3.png')%>">
+        <img id="piclogo4" src="<%=require('./image/logo6.png')%>">
+        <img id="piclogo5" src="<%=require('./image/logo5.png')%>">
+        <img id="piclogo6" src="<%=require('./image/logo4.png')%>">
+    </div>
+</div>
+<!-- mainFrame tsc -->
+<div id="tsc_mainFrame">
+    <div id="tsc_header">
+        <img id="tscmainLogo" src="<%=require('./image/mainLogo.png')%>">
+    </div>
+    <div id="tsc_leftpan">
+        <div id="userPan">
+
+            <div id="headericon"><img src="<%=require('./image/header.png')%>" width="100%" height="100%"></div>
+            <div id="username">Administrator</div>
+        </div>
+        <ul id="tsc_menu">
+            <li>Programing</li>
+            <li>Example</li>
+            <li>Demo</li>
+            <li>About Us</li>
+            <li>Download</li>
+        </ul>
+    </div>
+    <div id="tsc_centermain">
+        <div class="tsc_barFont">欢迎 进入系统</div>
+        <div id="nomalPan"></div>
+        <div class="tsc_barFont">Programing</div>
+        <div id="nomalPan"></div>
+        <div class="tsc_barFont">Example</div>
+        <div id="nomalPan"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="<%= htmlWebpackPlugin.options.path_dll %>"></script>
+</body>
+</html>
