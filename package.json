@@ -13,9 +13,10 @@
     "url": "https://github.com/wang-tsh/tsc.git"
   },
   "scripts": {
+    "dll": "webpack --progress --colors --config ./webpack-dll.config.js",
     "build": "webpack --progress --colors --bail",
-    "start": "webpack-dev-server",
-    "dll": "webpack --progress --colors --config ./webpack-dll.config.js"
+    "start": "webpack-dev-server"
+
   },
   "license": "MIT",
   "dependencies": {
