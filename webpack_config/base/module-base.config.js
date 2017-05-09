@@ -14,7 +14,16 @@ module.exports = {
       },
       {
           test: /\.vue$/,
-          loader: 'vue-loader'
+          loader: 'vue-loader',
+          options: {
+                loaders: {
+                    css: ExtractTextPlugin.extract({
+                        loader: 'css-loader',
+                        fallbackLoader: 'vue-style-loader',// <- this is a dep of vue-loader, so no need to explicitly install if using npm3
+                        publicPath :"../"//坑死我了，之前完全不知道有这个参数，出来的图片位置都不对
+                    })
+                }
+          }
       },
       {
           test: /\.css$/,

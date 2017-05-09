@@ -16,11 +16,11 @@
     "dll": "webpack --progress --colors --config ./webpack-dll.config.js",
     "build": "webpack --progress --colors --bail",
     "start": "webpack-dev-server"
-
   },
   "license": "MIT",
   "dependencies": {
-    "jquery": "^1.12.4"
+    "jquery": "^1.12.4",
+    "velocity-animate": "^1.5.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -31,6 +31,7 @@
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
+    "fs": "0.0.1-security",
     "glob": "^7.1.1",
     "html-webpack-plugin": "^2.28.0",
     "html-withimg-loader": "^0.1.16",

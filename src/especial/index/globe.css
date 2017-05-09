@@ -56,10 +56,7 @@ table {
  	background: -o-linear-gradient(23deg, #15CDE8, #0286C2); /* Opera 11.1 - 12.0 */
   	background: -moz-linear-gradient(23deg, #15CDE8, #0286C2); /* Firefox 3.6 - 15 */
   	background: linear-gradient(23deg, #15CDE8, #0286C2); /* 标准的语法 */
-	}	
-#centerLogo{
-	background-image:url(./image/centerLogo.png); background-repeat:no-repeat; background-position:center bottom; width:100%; height:65%;
-	}	
+	}
 #logoHead p{
 	font-size:14px; font-family:"微软雅黑"; color:#ffffff; line-height:40px; width:100%; text-align:center;
 	}	

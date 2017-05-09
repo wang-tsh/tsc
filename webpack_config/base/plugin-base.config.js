@@ -4,6 +4,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require('path');
 const dirVars = require('./dir-structure.config.js');
 const pageArr = require('./page-entries.config.js');
+const fs= require('fs');
 let configPlugins = [
     new webpack.ProvidePlugin({//此插件作用为，当出现$未被引用时，会自动引用jquery作为$值
         $: 'jquery',
@@ -23,8 +24,8 @@ pageArr.forEach((page) => {
     const htmlPlugin = new HtmlWebpackPlugin({
         filename: `${page}/${page}.html`,
         path_dll:path.relative(path.resolve(dirVars.buildDir,'./${page}'),path.resolve(dirVars.dllDir,'./dll.js')),
-        template: path.resolve(dirVars.especialDir, `./${page}/template.ejs`),
-        // chunks: [page, 'commons/commons'],
+        template:    fs.existsSync(path.resolve(dirVars.especialDir, `./${page}/template.ejs`))?path.resolve(dirVars.especialDir, `./${page}/template.ejs`):path.resolve(dirVars.especialDir, `./${page}/page.html`),
+         chunks: [page, 'commons/commons'],
        // hash: true, // 为静态资源生成hash值
         // xhtml: true,
     });
