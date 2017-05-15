@@ -32,11 +32,14 @@
         }),
         methods:{
            enter(){
+               //所有的动画操作交给css
+               // 解放了js~同学
+               this.$store.commit('login')
                    //page animation welcomepage
 //                   $('#tsc_topframe').animate({top:'-100%',opacity:'0'},800);
 //                   $("#centerLogo").animate({zoom:'0.3'},600);
 //                   $(this).animate({zoom:'0.2'},600);
-                   this.$store.commit('login')
+
                    //page animation mainframe
 //                   tsc_hdr.animate({top:'0',opacity:'1'},400,(function(){
 //                       tsc_ltp.animate({left:'0'},400,(function(){

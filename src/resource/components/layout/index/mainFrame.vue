@@ -16,6 +16,10 @@
                 <li>About Us</li>
                 <li>Download</li>
             </ul>
+            <tsc-menu
+             :menuType="menuType"
+             :routerData="cRouter"
+            ></tsc-menu>
         </div>
         <div id="tsc_centermain">
             <div class="tsc_barFont">欢迎 进入系统</div>
@@ -25,7 +29,21 @@
 
 </template>
 <script>
+    import tscMenu from '../../menu/tsc-menu.vue'
+    import clientRouter from '../../../config/router/clientRouter.json'
+    import Vue from 'vue';
+    import VueRouter from 'Vue-router'
+    vue.use(VueRouter)
     export default{
+        data:function () {
+            return {
+                menuType: "client",
+                cRouter:clientRouter
+            }
+        },
+        components:{
+            tscMenu
+        },
         mounted(){
             //do something
 //            this.$store.subscribe((mutation, state) => {

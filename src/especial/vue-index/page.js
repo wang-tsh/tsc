@@ -5,6 +5,7 @@ import Vue from 'vue';
 import index from '../../resource/components/layout/index/index.vue';
 import './globe.css';
 import store from '../../resource/components/layout/index/store'
+
 new Vue({
     el: '#app',
     store,
