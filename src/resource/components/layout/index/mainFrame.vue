@@ -9,13 +9,13 @@
                 <div id="headericon"><img src="./image/header.png" width="100%" height="100%"></div>
                 <div id="username">Administrator</div>
             </div>
-            <ul id="tsc_menu">
+            <!--<ul id="tsc_menu">
                 <li>Programing</li>
                 <li>Example</li>
                 <li>Demo</li>
                 <li>About Us</li>
                 <li>Download</li>
-            </ul>
+            </ul>-->
             <tsc-menu
              :menuType="menuType"
              :routerData="cRouter"
@@ -23,7 +23,9 @@
         </div>
         <div id="tsc_centermain">
             <div class="tsc_barFont">欢迎 进入系统</div>
-            <div id="nomalPan"></div>
+            <div id="nomalPan">
+                <router-view></router-view>
+            </div>
         </div>
     </div>
 
@@ -31,9 +33,9 @@
 <script>
     import tscMenu from '../../menu/tsc-menu.vue'
     import clientRouter from '../../../config/router/clientRouter.json'
-    import Vue from 'vue';
-    import VueRouter from 'Vue-router'
-    vue.use(VueRouter)
+    import Vue from 'vue'
+    import VueRouter from 'vue-router'
+    Vue.use(VueRouter)
     export default{
         data:function () {
             return {

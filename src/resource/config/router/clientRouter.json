@@ -1,5 +1,5 @@
 [
-  {"path":"/","name":"main","component":"main/main","icon":"fa-file-o","title":"主页","isLeaf":true,"children":[]},
-  {"path":"/user","name":"user","component":"user/user","icon":"fa-indent","title":"用户","isLeaf":true,"children":[]},
-  {"path":"/test","name":"test","component":"test/test","icon":"fa-indent","title":"测试","isLeaf":true,"children":[]}
+  {"path":"/main","name":"main","component":"common/main/main.vue","icon":"fa-file-o","title":"主页","isLeaf":true,"children":[]},
+  {"path":"/user","name":"user","component":"common/user/user.vue","icon":"fa-indent","title":"用户","isLeaf":true,"children":[]},
+  {"path":"/test","name":"test","component":"common/test/test.vue","icon":"fa-indent","title":"测试","isLeaf":true,"children":[]}
 ]

@@ -24,9 +24,11 @@ pageArr.forEach((page) => {
     const htmlPlugin = new HtmlWebpackPlugin({
         filename: `${page}/${page}.html`,
         path_dll:path.relative(path.resolve(dirVars.buildDir,'./${page}'),path.resolve(dirVars.dllDir,'./dll.js')),
+        path_css:path.relative(path.resolve(dirVars.buildDir,'./${page}'),path.resolve(dirVars.dllDir,'./styles.css')),
         template:    fs.existsSync(path.resolve(dirVars.especialDir, `./${page}/template.ejs`))?path.resolve(dirVars.especialDir, `./${page}/template.ejs`):path.resolve(dirVars.especialDir, `./${page}/page.html`),
          chunks: [page, 'commons/commons'],
-       // hash: true, // 为静态资源生成hash值
+        favicon:path.resolve(dirVars.staticRootDir,'./20170508100549682_easyicon_net_128.ico')
+       // hash: true, // 为静态资源生成hash值,
         // xhtml: true,
     });
     configPlugins.push(htmlPlugin);

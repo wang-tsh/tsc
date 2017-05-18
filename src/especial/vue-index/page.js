@@ -5,9 +5,10 @@ import Vue from 'vue';
 import index from '../../resource/components/layout/index/index.vue';
 import './globe.css';
 import store from '../../resource/components/layout/index/store'
-
+import router from  '../../resource/components/layout/index/router'
 new Vue({
     el: '#app',
+    router,
     store,
     render: h => h(index),
     mounted :function () {
