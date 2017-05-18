@@ -7,7 +7,7 @@ import routerConfig from '../../../../config/router/clientRouter.json'
 import path from 'path'
 import  dirVars from '../../../../../../webpack_config/base/dir-structure.config.js'
 Vue.use(VueRouter);
-//
+
 //  function buildLazy(componentPath,name){
 //      // debugger;
 // //     // return  r => require.ensure([], () => r(require('componentPath')), '/bar')
