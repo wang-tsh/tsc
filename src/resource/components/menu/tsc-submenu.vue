@@ -21,7 +21,11 @@
                 type: String,
                 required: true
             },
+<<<<<<< HEAD
             config:{
+=======
+            config{
+>>>>>>> d5b46eb861b9be1225736e987189aaf20fc438b3
                 type:Object
             }
 
