@@ -3,7 +3,7 @@
  */
 const webpack = require('webpack');
 const dirVars = require('./webpack_config/base/dir-structure.config.js'); // 与业务代码共用同一份路径的配置表
-
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     output: {
         path: dirVars.dllDir,
@@ -16,10 +16,11 @@ module.exports = {
          或是css/less/图片/字体文件等资源，但注意要在module参数配置好相应的loader
          */
         dll: [
-            'jquery', 'vue', 'vuex'
+            'jquery', 'vue', 'vuex','vue-router'
         ],
     },
     plugins: [
+
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
@@ -36,7 +37,8 @@ module.exports = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery',
             'window.$': 'jquery',
-        })
+        }),
+        new ExtractTextPlugin('styles.css'),
 
     ],
     module: require('./webpack_config/module.config.js'), // 沿用业务代码的module配置
