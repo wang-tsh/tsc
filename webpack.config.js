@@ -7,10 +7,10 @@ module.exports = {
     output: {
         publicPath: '../',
         path: __dirname + "/build",//打包后的文件存放的地方
-        filename: "[name]/[name].[chunkhash].js" //打包后输出文件的文件名
+        filename: "[name]/[name].[chunkhash].js", //打包后输出文件的文件名
+        chunkFilename : 'common/[name]/[name].[chunkhash].js'
     },
     resolve: require('./webpack_config/base/resolve-base.config.js'),
-
     module: require('./webpack_config/module.config.js'),
     plugins: require('./webpack_config/plugins.config.js'),
     devServer: {

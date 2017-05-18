@@ -12,19 +12,7 @@ module.exports = {
               plugins: ['transform-runtime'],
           },
       },
-      {
-          test: /\.vue$/,
-          loader: 'vue-loader',
-          options: {
-                loaders: {
-                    css: ExtractTextPlugin.extract({
-                        loader: 'css-loader',
-                        fallbackLoader: 'vue-style-loader',// <- this is a dep of vue-loader, so no need to explicitly install if using npm3
-                        publicPath :"../"//坑死我了，之前完全不知道有这个参数，出来的图片位置都不对
-                    })
-                }
-          }
-      },
+
       {
           test: /\.css$/,
           use: ExtractTextPlugin.extract({
@@ -56,23 +44,39 @@ module.exports = {
         name: './static/img/[hash].[ext]',
       },
     },
+      // {
+      //     test: /\.(svg|ttf|eot|woff|woff2)$/,
+      //     loader: 'file-loader?name=fonts/[name].[ext]'
+      // }
     // {
     //   // 专供bootstrap方案使用的，忽略bootstrap自带的字体文件
     //   test: /\.(woff|woff2|svg|eot|ttf)$/,
     //   include: /glyphicons/,
     //   loader: 'null-loader',
     // },
-    // {
-    //   // 专供iconfont方案使用的，后面会带一串时间戳，需要特别匹配到
-    //   test: /\.(woff|woff2|svg|eot|ttf)\??.*$/,
-    //   include: dirVars.srcRootDir,
-    //   // exclude: /glyphicons/,
-    //   // loader: 'file-loader?name=static/fonts/[name].[ext]',
-    //   loader: 'file-loader',
-    //   options: {
-    //     name: 'static/fonts/[name].[ext]',
-    //   },
-    // },
+    {
+      // 专供iconfont方案使用的，后面会带一串时间戳，需要特别匹配到
+      test: /\.(woff|woff2|svg|eot|ttf)\??.*$/,
+      // exclude: /glyphicons/,
+      // loader: 'file-loader?name=static/fonts/[name].[ext]',
+      loader: 'file-loader',
+      options: {
+        name: 'static/fonts/[name].[ext]',
+      },
+    },
+      {
+          test: /\.vue$/,
+          loader: 'vue-loader',
+          options: {
+              loaders: {
+                  css: ExtractTextPlugin.extract({
+                      loader: 'css-loader',
+                      fallbackLoader: 'vue-style-loader',// <- this is a dep of vue-loader, so no need to explicitly install if using npm3
+                      publicPath :"../"//坑死我了，之前完全不知道有这个参数，出来的图片位置都不对
+                  })
+              }
+          }
+      },
 
   ],
 };

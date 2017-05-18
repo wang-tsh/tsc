@@ -1,6 +1,6 @@
 <template>
     <div id="tsc_header">
-        <img id="tscmainLogo" src="image/mainLogo.png">
+        <img id="tscmainLogo" src="image/mainLogo.old.png">
     </div>
 </template>
 <script>

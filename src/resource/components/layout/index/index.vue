@@ -25,9 +25,9 @@
  </script>
  <style>
      #centerLogo{
-         background-image:url(./image/centerLogo.png); background-repeat:no-repeat; background-position:center bottom; width:100%; height:65%;
+         background-image:url(image/centerLogo.png); background-repeat:no-repeat; background-position:center bottom; width:100%; height:65%;
      }
-     .component-fade-enter-active,{
+     .component-fade-enter-active{
          transition: opacity .8s ease;
      }
      .component-fade-leave-active {

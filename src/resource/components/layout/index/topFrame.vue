@@ -3,8 +3,8 @@
     <div id="tsc_topframe">
         <div id="logoHead">
             <div id="centerLogo"></div>
-            <p>欢迎访问 CC & TS 的技术开发平台</p>
-            <p class="en_Logo">Welcome visit programing which product by tsc</p>
+            <p>欢迎访问EAF技术开发平台</p>
+            <p class="en_Logo">Welcome visit programing which product by eaf</p>
             <p class="en_Logo">You can get all programing detail </p>
         </div>
         <div id="enterPan">

@@ -52,10 +52,10 @@ table {
 	}
 #logoHead{
 	width:100%; height:55%; 	
-	background: -webkit-linear-gradient(23deg, #15CDE8, #0286C2); /* Safari 5.1 - 6.0 */
- 	background: -o-linear-gradient(23deg, #15CDE8, #0286C2); /* Opera 11.1 - 12.0 */
-  	background: -moz-linear-gradient(23deg, #15CDE8, #0286C2); /* Firefox 3.6 - 15 */
-  	background: linear-gradient(23deg, #15CDE8, #0286C2); /* 标准的语法 */
+	background: -webkit-linear-gradient(23deg, #1EA554, #1CBE3F); /* Safari 5.1 - 6.0 */
+ 	background: -o-linear-gradient(23deg, #1EA554, #1CBE3F); /* Opera 11.1 - 12.0 */
+  	background: -moz-linear-gradient(23deg, #1EA554, #1CBE3F); /* Firefox 3.6 - 15 */
+  	background: linear-gradient(23deg, #1EA554, #1CBE3F); /* 标准的语法 */
 	}
 #logoHead p{
 	font-size:14px; font-family:"微软雅黑"; color:#ffffff; line-height:40px; width:100%; text-align:center;
@@ -67,13 +67,13 @@ table {
 	width:100%; height:35%;
 	}
 #enterButton{
-	width:120px; height:120px; border-radius:64px; border:2px solid #62CCE9; margin-left:-70px; left:50%; position:absolute; margin-top:50px; cursor:pointer; opacity:0.7;
+	width:120px; height:120px; border-radius:64px; border:2px solid #7AD291; margin-left:-70px; left:50%; position:absolute; margin-top:50px; cursor:pointer; opacity:0.7;
 	}
 .eb_font{
-	font-size:26px; font-family:Arial,"微软雅黑"; width:100%; text-align:center; color:#62CCE9;
+	font-size:26px; font-family:Arial,"微软雅黑"; width:100%; text-align:center; color:#7AD291;
 	}	
 .eb_fontSml{
-	font-size:10px; font-family:Arial,"微软雅黑"; width:100%; text-align:center; color:#62CCE9; margin-top:38px;
+	font-size:10px; font-family:Arial,"微软雅黑"; width:100%; text-align:center; color:#7AD291; margin-top:38px;
 	}	
 #tsc_footerLogo{
 	width:100%; height:10%; padding-left:50px;
@@ -83,10 +83,10 @@ table {
 	}
 #tsc_header{
 	width:100%; height:60px; position:absolute; top:-60px; left:0; z-index:6; 
-	background: -webkit-linear-gradient(23deg, #15CDE8, #0286C2); /* Safari 5.1 - 6.0 */
- 	background: -o-linear-gradient(23deg, #15CDE8, #0286C2); /* Opera 11.1 - 12.0 */
-  	background: -moz-linear-gradient(23deg, #15CDE8, #0286C2); /* Firefox 3.6 - 15 */
-  	background: linear-gradient(23deg, #15CDE8, #0286C2); /* 标准的语法 */
+	background: -webkit-linear-gradient(23deg, #1EA554, #1CBE3F); /* Safari 5.1 - 6.0 */
+ 	background: -o-linear-gradient(23deg, #1EA554, #1CBE3F); /* Opera 11.1 - 12.0 */
+  	background: -moz-linear-gradient(23deg, #1EA554, #1CBE3F); /* Firefox 3.6 - 15 */
+  	background: linear-gradient(23deg, #1EA554, #1CBE3F); /* 标准的语法 */
 	}
 #tsc_header img {
 	margin-top:5px; margin-left:5px; opacity:0;
@@ -101,7 +101,7 @@ table {
 	opacity:0;
 	}
 .tsc_barFont{
-	font-size:22px; font-family:"微软雅黑"; color:#636363;  line-height:30px; text-indent:20px; border-left:10px solid #0FB6DC; margin:20px 0;	
+	font-size:22px; font-family:"微软雅黑"; color:#636363;  line-height:30px; text-indent:20px; border-left:10px solid #1CBE3F; margin:20px 0;
 	}	
 #userPan{
 	width:98%; height:180px;  border-bottom:1px solid #e9e9e9; margin-left:1%;
@@ -110,7 +110,7 @@ table {
 	width:70px; height:70px; border-radius:35px; overflow:hidden; position:absolute; margin-top:30px; margin-left:35%; cursor:pointer;
 	}
 #username{
-	padding:5px 20px; border:2px solid #A5F0FC; color:#A5F0FC; font-size:14px; font-family:"微软雅黑"; text-align:center; width:100px; border-radius:8px; position:absolute;  margin-top:120px; margin-left:20%;
+	padding:5px 20px; border:2px solid #1CBE31; color:#1CBE31; font-size:14px; font-family:"微软雅黑"; text-align:center; width:100px; border-radius:8px; position:absolute;  margin-top:120px; margin-left:20%;
 	}	
 #tsc_menu li{
 	width:100%; height:45px; border-bottom:1px solid #f1f1f1; line-height:45px; cursor:pointer; text-indent:50px; color:#636363; font-size:16px; font-family:"微软雅黑";
@@ -120,10 +120,54 @@ table {
 	}	
 #nomalPan{
 	width:100%; height:40%; background-color:#fff;
-	}	
-	
-	
-	
+	}
+
+/*新增*/
+ul,li{
+	list-style:none; padding:0; margin:0; font-family:"微软雅黑";
+}
+.navTree{
+	display: block; width: 100%; padding-right: 0;  padding-left: 0; border:1px solid #e3e3e3; background-color:#ffffff; border-bottom:0;
+}
+.navTree ul{
+
+}
+.navTree ul li{
+	font-size:13px; color:#323232; line-height:30px; text-indent:5px; border-bottom:1px solid #e3e3e3;
+}
+.navTree ul li ul li:first-child{
+	border-top:1px solid #e3e3e3;
+}
+.navTree ul li ul li:last-child{
+	border-bottom:0;
+}
+.navTree ul li ul li{
+	font-size:13px; color:#323232; line-height:30px; text-indent:15px; background-color:#f8f8f8;
+}
+.navTree ul li ul li ul li{
+	font-size:13px; color:#323232; line-height:30px; text-indent:25px; background-color:#f3f3f3;
+}
+i{
+	margin-right:5px;
+}
+nav a:link, nav a:active, nav a:visited{
+	color:#323232; text-decoration:none;
+}
+nav a:hover{
+	color:#307BB0; text-decoration:none;
+}
+nav i{
+	font-size:12px !important;
+}
+.closelist{
+	display:none;
+}
+.fr_tsc{
+	float:right;
+}
+.listToggle{
+	margin-top:11px; margin-right:10px;
+}
 	
 	
 	
