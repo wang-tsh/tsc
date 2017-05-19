@@ -21,7 +21,7 @@
                 type: String,
                 required: true
             },
-            config{
+            config:{
                 type:Object
             }
 
