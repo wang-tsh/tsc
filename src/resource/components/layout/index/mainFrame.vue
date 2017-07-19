@@ -17,13 +17,16 @@
                 <li>Download</li>
             </ul>-->
             <tsc-menu
-             :menuType="menuType"
-             :routerData="cRouter"
-            ></tsc-menu>
+                :menuType="menuType"
+                :routerData="cRouter"
+                :beforeItemClick="beforeItem"
+                :afterSubmenuClick="afterSub"
+        ></tsc-menu>
         </div>
         <div id="tsc_centermain">
-            <div class="tsc_barFont">欢迎 进入系统</div>
+
             <div id="nomalPan">
+                <div class="tsc_barFont">欢迎 进入系统</div>
                 <router-view></router-view>
             </div>
         </div>
@@ -35,7 +38,9 @@
     import clientRouter from '../../../config/router/clientRouter.json'
     import Vue from 'vue'
     import VueRouter from 'vue-router'
+    import 'font-awesome/css/font-awesome.min.css'
     Vue.use(VueRouter)
+
     export default{
         data:function () {
             return {
@@ -45,6 +50,19 @@
         },
         components:{
             tscMenu
+        },
+        methods:{
+            beforeItem: function(item){
+                if(item.config.name==="user")
+                {
+                    return false
+                }else{
+                    return true
+                }
+            },
+            afterSub:function(item){
+                console.info("sub")
+            }
         },
         mounted(){
             //do something

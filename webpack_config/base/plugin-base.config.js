@@ -6,17 +6,23 @@ const dirVars = require('./dir-structure.config.js');
 const pageArr = require('./page-entries.config.js');
 const fs= require('fs');
 let configPlugins = [
+    new webpack.DefinePlugin({
+        'process.env': {
+            // NODE_ENV: '"production"'
+            NODE_ENV: '"dev"'
+        }
+    }),
     new webpack.ProvidePlugin({//此插件作用为，当出现$未被引用时，会自动引用jquery作为$值
         $: 'jquery',
         jQuery: 'jquery',
         'window.jQuery': 'jquery',
         'window.$': 'jquery',
     }),
-    new webpack.DllReferencePlugin({
-        context: dirVars.staticRootDir, // 指定一个路径作为上下文环境，需要与DllPlugin的context参数保持一致，建议统一设置为项目根目录
-        manifest: require('../../manifest.json'), // 指定manifest.json
-        name: 'dll',  // 当前Dll的所有内容都会存放在这个参数指定变量名的一个全局变量下，注意与DllPlugin的name参数保持一致
-    }),
+    // new webpack.DllReferencePlugin({
+    //     context: dirVars.staticRootDir, // 指定一个路径作为上下文环境，需要与DllPlugin的context参数保持一致，建议统一设置为项目根目录
+    //     manifest: require('../../manifest.json'), // 指定manifest.json
+    //     name: 'dll',  // 当前Dll的所有内容都会存放在这个参数指定变量名的一个全局变量下，注意与DllPlugin的name参数保持一致
+    // }),
     new ExtractTextPlugin('[name]/styles.[chunkhash].css'),
 ];
 

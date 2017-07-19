@@ -8,7 +8,8 @@ import Vuex from 'vuex'
 Vue.use(Vuex);
 export default new Vuex.Store({
     state:{
-        logined: "top-frame"
+        logined: "top-frame",
+        activedPage:[],
     },
     mutations :{
         login(state){//login方法

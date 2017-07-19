@@ -1,5 +1,10 @@
 [
-  {"path":"/main","name":"main","component":"common/main/main.vue","icon":"fa-file-o","title":"主页","isLeaf":true,"children":[]},
-  {"path":"/user","name":"user","component":"common/user/user.vue","icon":"fa-indent","title":"用户","isLeaf":true,"children":[]},
-  {"path":"/test","name":"test","component":"common/test/test.vue","icon":"fa-indent","title":"测试","isLeaf":true,"children":[]}
+  {"path":"/main","name":"main","component":"common/main/main.vue","icon":"fa-window-maximize","title":"主页","isLeaf":false,
+    "children": [
+      {"path":"/main/abc","name":"abc","component":"common/main/abc/abc.vue","icon":"fa-indent","title":"abc","isLeaf":true,"children":[
+        {"path":"/main/abc/def","name":"def","component":"common/main/abc/def/def.vue","icon":"fa-indent","title":"def","isLeaf":true,"children":[]}
+      ]}
+    ]},
+  {"path":"/user","name":"user","component":"common/user/user.vue","icon":"fa-file-o","title":"用户","isLeaf":true,"children":[]},
+  {"path":"/test","name":"test","component":"common/test/test.vue","icon":"fa-file-o","title":"测试","isLeaf":true,"children":[]}
 ]

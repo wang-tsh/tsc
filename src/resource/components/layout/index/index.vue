@@ -12,6 +12,7 @@
  import { mapState } from 'vuex'
  import topFrame from './topFrame.vue'
  import mainFrame from './mainFrame.vue'
+
  export default {
 
      computed: mapState({
