@@ -7,3 +7,4 @@ node_modules/
 .idea/tsc.iml
 .idea/watcherTasks.xml
 .idea/workspace.xml
+.vscode/
