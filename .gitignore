@@ -1,10 +1,4 @@
 build/
 node_modules/
-.idea/jsLibraryMappings.xml
-.idea/modules.xml
-.idea/preferred-vcs.xml
-.idea/tsc-master.iml
-.idea/tsc.iml
-.idea/watcherTasks.xml
-.idea/workspace.xml
+.idea/
 .vscode/
