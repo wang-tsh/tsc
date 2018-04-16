@@ -59,6 +59,7 @@
         },
         methods: {
             handleItemClick:function(item){
+                debugger;
                 if(this.beforeItemClick(item)){
                     this.$router.push(item.config.path)
                     this.afterItemClick(item)

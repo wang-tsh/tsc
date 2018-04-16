@@ -27,6 +27,7 @@
         },
         methods:{
             jump:function(){
+                debugger;
                 this.dispatch('TSCMenu', 'item-click', this);
                 this.$emit('click', this);
             }
